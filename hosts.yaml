@@ -1,0 +1,3 @@
+terraform-ansible:
+  hosts:
+    52.36.81.53:
