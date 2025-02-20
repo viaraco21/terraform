@@ -19,3 +19,4 @@ comando para executar o ansible - somente este
 sudo ansible-playbook playbook.yaml -u ubuntu --private-key raco14-oregon.pem -i hosts.yaml# terraform-aws-ansible
 
 # terraform-aws-ansible teste
+# terraform-aws-ansible
