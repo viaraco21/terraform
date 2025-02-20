@@ -4,16 +4,16 @@ comando para entrar no diretorio do projeto
 cd /mnt/c/Users/renat/OneDrive/Área\ de\ Trabalho/terraform/pan
 
 comando para editar o arquivo pen
-wsl chmod 400 /mnt/c/Users/renat/OneDrive/Área\ de\ Trabalho/terraform/pan/keyraco1.pem
-chmod 400 /mnt/c/Users/renat/OneDrive/Área\ de\ Trabalho/terraform/pan/keyraco1.pem
-sudo chmod 400 /mnt/c/Users/renat/OneDrive/Área\ de\ Trabalho/terraform/pan/keyraco1.pem
+chmod 400 /mnt/c/Users/renat/OneDrive/Área\ de\ Trabalho/terraform/pan/raco14-oregon.pem
+sudo chmod 400 /mnt/c/Users/renat/OneDrive/Área\ de\ Trabalho/terraform/pan/raco14-oregon.pem
 
 
 comando para listar
-ls -l /mnt/c/Users/renat/OneDrive/Área\ de\ Trabalho/terraform/pan/keyraco1.pem
+ls -l /mnt/c/Users/renat/OneDrive/Área\ de\ Trabalho/terraform/pan/raco14-oregon.pem
 
 conexao ssh - alterar o ip
-ssh -i /home/raco/keyraco1.pem ubuntu@ec2-52-43-232-168.us-west-2.compute.amazonaws.com
+ssh -i /home/raco/raco14-oregon.pem ubuntu@ec2-52.13.99.16.us-west-2.compute.amazonaws.com
+ssh -i "raco14-oregon.pem" ubuntu@ec2-52.13.99.16.us-west-2.compute.amazonaws.com
 
-comando para executar o ansible
-sudo ansible-playbook playbook.yaml -u ubuntu --private-key keyraco1.pem -i hosts.yaml
+comando para executar o ansible - somente este
+sudo ansible-playbook playbook.yaml -u ubuntu --private-key raco14-oregon.pem -i hosts.yaml# terraform-aws-ansible
