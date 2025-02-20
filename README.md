@@ -17,3 +17,4 @@ ssh -i "raco14-oregon.pem" ubuntu@ec2-52.13.99.16.us-west-2.compute.amazonaws.co
 
 comando para executar o ansible - somente este
 sudo ansible-playbook playbook.yaml -u ubuntu --private-key raco14-oregon.pem -i hosts.yaml# terraform-aws-ansible
+# terraform-aws-ansible
